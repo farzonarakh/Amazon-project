@@ -656,5 +656,33 @@
       "apparel",
       "mens"
     ]
+  },
+  {
+    "id": 1,
+    "image": "images copy/products/backpack.jpg",
+    "name": "Durable, Lightweight Bookbag with 1 Main Compartment, Front Utility Pocket with Built-in Organizer - Premium Backpack, Black",
+    "rating": {
+      "stars": 4.5,
+      "count": 3478
+    },
+    "priceCents": 3648,
+    "keywords": [
+      "backpacks",
+      "Bookbag"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "images copy/products/umbrella.jpg",
+    "name": "Compact Travel Umbrella - Windproof Auto Open/Close, Small Folding Umbrella for Rain - Lightweight & Durable with Fiberglass Frame, Waterproof Canopy - Fits Backpack, Purse, Suitcase.",
+    "rating": {
+      "stars": 4.5,
+      "count": 8807
+    },
+    "priceCents": 999,
+    "keywords": [
+      "travel",
+      "umbrella"
+    ]
   }
 ]
