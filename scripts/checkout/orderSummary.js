@@ -157,10 +157,10 @@ export function renderOrderSummary() {
         }
 
         updateQuantity(productId, newQuantity);
-
-        document.querySelector(`.js-quantity-label-${productId}`).innerHTML = newQuantity + ' items';
         
         calculateCartQuantity('.js-return-to-home-link');
+        renderOrderSummary();
+        renderPaymentSummary();
       });
     });
 

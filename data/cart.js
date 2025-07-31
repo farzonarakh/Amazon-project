@@ -65,9 +65,12 @@ export function calculateCartQuantity(link) {
   if (link === '.js-return-to-home-link') {
     document.querySelector(link)
       .innerHTML = cartQuantity +' items';
-    } else if (cartQuantity !== 0) {
+    } else if (cartQuantity !== 0 && link === '.js-cart-quantity') {
       document.querySelector(link)
         .innerHTML = cartQuantity;
+    } else if (link === '.js-payment-summary-items') {
+      document.querySelector(link)
+      .innerHTML = `Items(${cartQuantity}):`;
     }
 }
 
