@@ -1,4 +1,4 @@
-import{cart, removeFromCart, calculateCartQuantity, updateQuantity, updateDeliveryOption} from '../../data/cart.js';
+import{cart, removeFromCart, calculateCartQuantity, updateQuantity, updateDeliveryOption, saveToStorage} from '../../data/cart.js';
 import {products, getProduct} from  '../../data/products.js';
 import formatCurrency from '../utils/money.js';
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
@@ -111,6 +111,7 @@ export function renderOrderSummary() {
       link.addEventListener('click', () => {
         const {productId} = link.dataset;
         removeFromCart(productId);
+        saveToStorage();
 
         renderPaymentSummary();
         renderOrderSummary();
